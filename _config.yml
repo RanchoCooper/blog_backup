@@ -1,0 +1,153 @@
+# Hexo Configuration
+## Docs: https://hexo.io/docs/configuration.html
+## Source: https://github.com/hexojs/hexo/
+
+# Site
+title: Rancho
+subtitle: 爱和死亡留给上帝
+author: Rancho
+language:
+timezone:
+
+# Category & Tag
+default_category: essay
+category_map:
+tag_map:
+    - 随笔: essay
+    - 读书札记: note-reading
+    - 编程技术: skill-programming
+    - 心智: mental
+
+# URL
+## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
+url: https://ranchocooper.coding.me/blog/
+root: /blog
+permalink: :year/:month/:day/:title/
+permalink_defaults:
+
+#Custom Setting Start
+
+# Site settings
+SEOTitle: 伯爵在古堡
+header-img: img/home-bg.jpg
+email: ranchocooper@gmail.com
+description: ""
+keyword: ""
+
+
+# SNS settings
+rss: true
+zhihu_username:     rancho-cooper
+github_username:    RanchoCooper
+facebook_username:  RanchoCoper
+linkedin_username:  ranchocooper
+
+# Build settings
+anchorjs: true                          # if you want to customize anchor. check out line:181 of `post.html`
+
+
+# Disqus settings
+disqus_username: ranchocooper
+
+# Duoshuo settings
+# duoshuo_username: kaijun
+# Share component is depend on Comment so we can NOT use share only.
+duoshuo_share: true                     # set to false if you want to use Comment without Sharing
+
+
+# Analytics settings
+# Baidu Analytics
+# ba_track_id:
+# Google Analytics
+# ga_track_id:            # Format: UA-xxxxxx-xx
+# ga_domain:
+
+
+# Sidebar settings
+sidebar: true                           # whether or not using Sidebar.
+sidebar-about-description: "爱和死亡，留给上帝。"
+sidebar-avatar: /img/avatar.jpg      # use absolute URL, seeing it's used in both `/` and `/about/`
+
+
+# Featured Tags
+featured-tags: true                     # whether or not using Feature-Tags
+featured-condition-size: 1              # A tag will be featured if the size of it is more than this condition value
+
+
+# Friends
+friends: [
+    {
+        title: "七秒不觉梦",
+        href: "http://0v0.link/"
+    },{
+        title: "海盗杂谈",
+        href: "https://xlzd.me/"
+    },{
+        title: "Web云端研究所",
+        href: "https://www.yhspy.com/"
+    },{
+        title: "Mind Hack",
+        href: "http://mindhacks.cn/"
+    },{
+        title: "",
+        href: ""
+    },{
+        title: "",
+        href: ""
+    }
+]
+
+
+#Custom Setting End
+
+
+
+# Directory
+source_dir: source
+public_dir: public
+tag_dir: tags
+archive_dir: i_dont_wanna_use_default_archives
+category_dir: categories
+code_dir: downloads/code
+i18n_dir: :lang
+skip_render:
+
+# Writing
+new_post_name: :title.md # File name of new posts
+default_layout: post
+titlecase: false # Transform title into titlecase
+external_link: true # Open external links in new tab
+filename_case: 0
+render_drafts: false
+post_asset_folder: true
+relative_link: false
+future: true
+highlight:
+    enable: true
+    line_number: true
+    auto_detect: true
+    tab_replace: true
+
+# Date / Time format
+## Hexo uses Moment.js to parse and display date
+## You can customize the date format as defined in
+## http://momentjs.com/docs/#/displaying/format/
+date_format: YYYY-MM-DD
+time_format: HH:mm:ss
+
+# Pagination
+## Set per_page to 0 to disable pagination
+per_page: 10
+pagination_dir: page
+
+# Extensions
+## Plugins: https://hexo.io/plugins/
+## Themes: https://hexo.io/themes/
+theme: hux
+
+# Deployment
+## Docs: https://hexo.io/docs/deployment.html
+deploy:
+    type: git
+    repo: git@git.coding.net:ranchocooper/blog.git
+    branch: master
