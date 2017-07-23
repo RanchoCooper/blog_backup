@@ -23,5 +23,14 @@ comments: true
 **进度明细**
 
 - 高性能MySQL
-✔ MySQL架构与历史 @done (17-07-22 17:38)
+✔ MySQL架构与历史 @done (17-07-22)
+
+- Python[官方文档](https://docs.python.org/3.5/)
+    - Python Language Reference
+ ☐ introduction
+ ☐
+
+
+- 编写高质量代码
+ ☐ 引论
 
