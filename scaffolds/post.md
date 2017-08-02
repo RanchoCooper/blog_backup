@@ -2,6 +2,7 @@
 title: {{ title }}
 subtitle:
 date: {{ date }}
-tags:
 header-img:
+tags:
+catalog: True
 ---

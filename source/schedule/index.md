@@ -25,10 +25,22 @@ comments: true
 - 高性能MySQL
 ✔ MySQL架构与历史 @done (17-07-22)
 
-- Python[官方文档](https://docs.python.org/3.5/)
+
+- Effective Python
+ ✔ Python式思考 @done (17-07-25)
+ ✔ 函数 @done (17-07-26)
+ ☐ 类和继承
+ ☐ 元类和属性
+ ☐ 并行与并发
+ ☐ 内置模块
+ ☐ 合作
+ ☐ 产品
+
+- [Python官方文档](https://docs.python.org/3.5/)
     - Python Language Reference
- ☐ introduction
- ☐
+ ✔ Introduction @done (17-07-25)
+ ✔ Lexical analysis @done (17-07-25)
+ ☐ Data model
 
 
 - 编写高质量代码
