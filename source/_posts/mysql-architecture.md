@@ -1,10 +1,10 @@
 ---
-title: MySQL Architecture
-subtitle: MySQL架构
+title: MySQL架构
+subtitle: MySQL Architecture
 date: 2017-07-22 02:04:12
 catalog: true
 tags:
-    - 读书札记
+    - 札记
     - 高性能MySQL
 ---
 

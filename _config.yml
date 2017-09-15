@@ -14,8 +14,8 @@ default_category: essay
 category_map:
 tag_map:
     - 随笔: essay
-    - 读书札记: note-reading
-    - 编程技术: skill-programming
+    - 札记: note-reading
+    - 编程: skill-programming
     - 心智: mental
 
 # URL
