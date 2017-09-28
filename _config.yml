@@ -37,9 +37,9 @@ keyword: ""
 
 # SNS settings
 rss: true
-zhihu_username:     rancho-cooper
+zhihu_username:     ranchocooper
 github_username:    RanchoCooper
-facebook_username:  RanchoCoper
+facebook_username:  RanchoCooper
 linkedin_username:  ranchocooper
 
 # Build settings

@@ -1511,7 +1511,7 @@ code,
 kbd,
 pre,
 samp {
-  font-family: Menlo, Monaco, Consolas, "Courier New", monospace;
+  font-family:Consolas, monospace, Monaco, Menlo, "Courier New";
 }
 code {
   padding: 2px 4px;

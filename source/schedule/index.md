@@ -37,6 +37,8 @@ comments: true
    ✔ 第3章 思考未来：你的目标是什么 @done (17-09-17)
    ✔ 第4章 人际交往：远比你想象的重要 @done (17-09-18)
 
+- 《Understanding Unix/Linux Programming》
+
 - The Linux Command Line
  ✔ 第一章 引言 @done (17-08-18)
  ✔ 第二章 : 什么是 shell @done (17-08-29)
@@ -56,6 +58,7 @@ comments: true
  ✔ 第十六章 : 存储媒介 @done (17-08-30)
  ✔ 第十七章 : 网络系统 @done (17-08-30)
  ✔ 第十八章 : 查找文件 @done (17-08-30)
+ ✔ 第十九章： 归档和备份 @done (17-09-20)
 
 - 《高性能MySQL》
 ✔ MySQL架构与历史 @done (17-07-22)

@@ -1,5 +1,5 @@
 ---
-title: 『译』模块化，可伸缩的测试固件
+title: 『译』测试固件那些事
 catalog: true
 date: 2017-07-26 14:57:33
 subtitle: Pytest fixtures explicit, modular, scalable
