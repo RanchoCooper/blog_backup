@@ -14,6 +14,7 @@ comments: true
 - 技术书籍
     ☐ 《The Linux Command Line》
     ☐ 《深入理解计算机系统》重读
+    ☐ 《Python标准库》
     ☐ 《Linux程序设计》
     ☐ 《Unix环境高级编程》
 
@@ -31,8 +32,14 @@ comments: true
 - 《Understanding Unix/Linux Programming》
     ☐ 01: 系统编程概述
 
+- 《数据库系统概论》
+    ✔ 初识 @done (17-10-01 14:37)
+    ✔ 核心：数据模型 @done (17-10-01 16:42)
+    ✔ 数据库系统的结构 @done (17-10-02 17:21)
+    ✔ 数据库系统的组成 @done (17-10-03 11:44)
 
-- The Linux Command Line
+
+- 《The Linux Command Line》
     ✔ 第一章 引言 @done (17-08-18)
     ✔ 第二章 : 什么是 shell @done (17-08-29)
     ✔ 第三章：文件系统中跳转 @done (17-08-29)
