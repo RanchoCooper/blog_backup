@@ -115,7 +115,7 @@ skip_render:
 # Writing
 new_post_name: :title.md # File name of new posts
 default_layout: post
-titlecase: false # Transform title into titlecase
+titlecase: true # Transform title into titlecase
 external_link: true # Open external links in new tab
 filename_case: 0
 render_drafts: false
@@ -143,7 +143,7 @@ pagination_dir: page
 # Extensions
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
-theme: hux
+theme: hexo-theme-huxblog
 
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
@@ -151,4 +151,4 @@ deploy:
     type: git
     repo: git@git.coding.net:ranchocooper/blog.git
     branch: master
-    message: add README
+    message: a simple object model

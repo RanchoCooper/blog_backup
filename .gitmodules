@@ -1,0 +1,3 @@
+[submodule "themes/hexo-theme-huxblog"]
+	path = themes/hexo-theme-huxblog
+	url = git@github.com:RanchoCooper/hexo-theme-huxblog.git
