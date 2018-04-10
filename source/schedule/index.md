@@ -19,11 +19,31 @@ comments: true
     ☐ 《Linux程序设计》
     ☐ 《Unix环境高级编程》
     ☐ 《Fluent Python》
+    ☐ 《代码整洁之道》
+    ☐ 《未来之路》
+    ☐ 《敏捷软件开发》
 
 
 ## 进度明细
 - 《Fluent Python》
     ✔ ch01: Python数据模型 @done (2018-02-28)
+
+
+- 《高性能MySQL》
+    ✔ MySQL架构与历史 @done (17-07-22)
+
+
+- 《图解HTTP》
+    ✔ ch01: 了解Web及网络基础 @done (2018-04-03)
+    ✔ ch02: 简单的HTTP协议 @done (2018-04-08)
+
+
+- 《代码整洁之道》
+    ✔ ch00: 引言 & 译者序 & 序 @done (2018-03-13)
+    ✔ ch01: 专业主义 @done (2018-03-14)
+    ✔ ch02: 说不 @done (2018-03-16)
+    ☐ 
+
 
 - 《未来之路》
     ✔ ch01: 一场革命开始了 @done (2018-02-12)
@@ -33,10 +53,13 @@ comments: true
     ✔ ch05: 通往信息高速公路的途径 @done (2018-03-05)
     ✔ ch06: 内容革命 @done (2018-03-05)
     ✔ ch07: 对商业的启示 @done (2018-03-05)
-    ☐ ch08: 自由竞争的资本主义
+    ✔ ch08: 自由竞争的资本主义 @done (2018-03-14)
+    ✘ ch09: 教育: 最佳投资 @cancelled (2018-03-14)
+
 
 - 《大型分布式网站架构设计与实践》
     ✔ 序 & 前言 @done (2018-03-09)
+
 
 - 《数据库系统概论》
     ✔ 初识 @done (17-10-01 14:37)
@@ -66,8 +89,6 @@ comments: true
     ✔ 第十八章 : 查找文件 @done (17-08-30)
     ✔ 第十九章： 归档和备份 @done (17-09-20)
 
-- 《高性能MySQL》
-    ✔ MySQL架构与历史 @done (17-07-22)
 
 - 《Effective Python》
     ✔ Python式思考 @done (17-07-25)
@@ -78,6 +99,7 @@ comments: true
     ☐ 内置模块
     ☐ 合作
     ☐ 产品
+
 
 - [Python官方文档](https://docs.python.org/3.5/)
     - Python Language Reference
