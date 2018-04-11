@@ -6,4 +6,5 @@ node_modules/
 public/
 .deploy*/
 source/_history_posts/
+package-lock.json
 

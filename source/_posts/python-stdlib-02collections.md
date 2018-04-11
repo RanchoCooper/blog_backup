@@ -17,7 +17,7 @@ tags:
 - deque：双端队列，允许从任意一端增加或删除元素。
 - namedtuple：生成可以使用名字来访问元素内容的tuple子类
 
-## Counter
+# Counter
 Counter作为一个容器，可以跟踪相同的值增加了多少次。Counter支持3种形式的初始化：调用Counter构造函数时提供元素序列或者一个包含键和技术的字典，还可以使用关键字参数将字符串名映射到计数。(默认行为会按照key来排序)
 
 ```python
@@ -68,7 +68,7 @@ for letter, count in c.most_common(3):
 另外，Counter实例还支持算数和集合操作。每次执行一个操作会生成一个新的Counter，并且计数为0或者为负数的元素会被删除。
 
 
-## defaultdict
+# defaultdict
 内建字典包含`setdefault`方法来获取默认值，而defaultdict会在初始化容器时就让调用者提前指定默认值。
 
 ```python
@@ -81,13 +81,13 @@ d3 = defaultdict(partial(defaultdict, partial(int, 3)))
 ```
 
 
-## OrderedDict
+# OrderedDict
 OrderedDict其实是字典的子类，它可以记住往字典中增加元素的顺序
 
 需要注意的时，OrderedDict在检查相等性时，除了查看其内容，也会考虑元素增加的顺序
 
 
-## deque
+# deque
 双端队列支持从任意一端增加和删除元素。栈和队列实际上就是双端队列的退化形式，其输入和输出都限制在一端。由于deque是一种序列容器，因此同样支持list的一些操作，如用`__getitem__`检查内容，确定长度，以及通过匹配标识从序列中删除某元素。
 
 ```python
@@ -122,7 +122,7 @@ d.rotate(-2)
 ```
 
 
-## namedtuple
+# namedtuple
 内建tuple使用数值索引来访问成员，一旦tuple中的字段变多，而且在代码实现中，可能元组的构造和使用相距很远，就很容易导致错误。namedtuple除了指定数值索引外，还回指定名字。在内存使用方面，namedtupel和内建元组同样高效。
 
 ```python
