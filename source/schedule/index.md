@@ -25,6 +25,27 @@ comments: true
 
 
 ## 进度明细
+
+- 《Hadoop-The Definitive Guide》
+    ☐ Foreword
+
+
+- 《深度工作》
+    ✔ ch00: 前言 @done (2018-04-21)
+    ☐  第一部分 - 理论
+        ☐ ch01: 深度工作是有价值的
+        ☐ ch02: 深度工作是少见的
+        ☐ ch03: 深度工作是有意义的
+    ☐  第二部分 - 准则
+        ☐ 准则一: 工作要深入
+        ☐ 准则二: 拥抱无聊
+        ☐ 准则三: 远离社交媒体
+        ☐ 准则四: 摒弃肤浅
+
+
+- 《Python Cook Book》
+    ☐ ch09: 元编程
+
 - 《Fluent Python》
     ✔ ch01: Python数据模型 @done (2018-02-28)
 
@@ -36,7 +57,15 @@ comments: true
 - 《图解HTTP》
     ✔ ch01: 了解Web及网络基础 @done (2018-04-03)
     ✔ ch02: 简单的HTTP协议 @done (2018-04-08)
-
+    ✔ ch03: HTTP报文内的HTTP信息 @done (2018-04-27)
+    ✔ ch04: 返回结果的HPPT状态码 @done (2018-04-27)
+    ✔ ch05: 与HTTP协作的Web服务器 @done (2018-04-28)
+    ✔ ch06: HTTP首部 @done (2018-05-03)
+    ✔ ch07: 确保HTTP安全的HTTPS @done (2018-05-03)
+    ✔ ch08: 确认访问用户身份的认证 @done (2018-05-03)
+    ☐ ch09: 基于HTTP的功能追加协议
+    ✔ ch10: 构建Web内容的技术 @done (2018-05-04)
+    ✔ ch11: Web的攻击技术 @done (2018-05-04)
 
 - 《代码整洁之道》
     ✔ ch00: 引言 & 译者序 & 序 @done (2018-03-13)
