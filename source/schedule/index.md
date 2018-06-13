@@ -12,14 +12,12 @@ comments: true
 ## 进度明细
 
 - 《Redis设计与实现》
-    ☐ 
     ✔ ch02: 简单动态字符串 @done (2018-06-08)
     ✔ ch03: 链表 @done (2018-06-08)
     ✔ ch04: 字典 @done (2018-06-08)
-    ☐ 
     ☐ ch09: 数据库
-    ☐ ch10: RDB持久化
-    ☐ ch11: AOF持久化
+    ✔ ch10: RDB持久化 @done (2018-06-10)
+    ✔ ch11: AOF持久化 @done (2018-06-10)
     ☐ ch12: 事件
     ☐ ch13: 客户端
     ☐ ch14: 服务器
@@ -34,7 +32,6 @@ comments: true
     ☐ ch09: multiprocessing模块
     ☐ ch10: 集群和工作队列
     ☐ ch11: 使用更少的RAM
-    ☐ 
 
 - 《数据结构与算法 Python语言描述》
 
