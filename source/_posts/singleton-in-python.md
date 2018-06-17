@@ -6,7 +6,7 @@ subtitle: Singleton in Python
 author: Rancho
 header-img:
 tags:
-    - 札记
+    - 编程札记
     - 设计模式
 ---
 

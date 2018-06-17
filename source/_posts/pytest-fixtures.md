@@ -5,7 +5,7 @@ date: 2017-07-26 14:57:33
 subtitle: Pytest fixtures explicit, modular, scalable
 header-img:
 tags:
-    - 札记
+    - 编程札记
     - pytest
 ---
 

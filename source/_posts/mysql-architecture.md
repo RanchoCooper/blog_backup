@@ -4,7 +4,7 @@ subtitle: MySQL Architecture
 date: 2017-07-22 02:04:12
 catalog: true
 tags:
-    - 札记
+    - 编程札记
     - 高性能MySQL
 ---
 

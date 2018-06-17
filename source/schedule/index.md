@@ -11,6 +11,25 @@ comments: true
 
 ## 进度明细
 
+- Tornado Doc
+    ☐ User's guide
+    ☐ Web Framework
+    ☐ HTTP servers and clients
+    ☐ Asynchronous networking
+    ☐ Coroutines and concurrency
+    ☐ Integration with other services
+    ☐ Utilities
+
+
+- 《深入理解RPC》
+    ✔ RPC在企业服务中的地位 @done (2018-06-14)
+    ✔ 深入理解RPC交互流程 @done (2018-06-15)
+    ✔ 深入理解RPC消息协议设计 @done (2018-06-15)
+    ✔ 理解消息协议 @done (2018-06-15)
+    ☐ 
+    ☐ 
+
+
 - 《Redis设计与实现》
     ✔ ch02: 简单动态字符串 @done (2018-06-08)
     ✔ ch03: 链表 @done (2018-06-08)
@@ -33,16 +52,26 @@ comments: true
     ☐ ch10: 集群和工作队列
     ☐ ch11: 使用更少的RAM
 
-- 《数据结构与算法 Python语言描述》
 
 - 《MySQL技术内幕: InnoDB存储引擎》
+    ✔ MySQL体系结构和存储引擎 @done (2018-06-14)
+    ☐ InnoDB存储引擎
+    ☐ 文件
+    ☐ 表
+    ☐ 索引和算法
+    ☐ 锁
+    ☐ 事务
+    ☐ 备份与恢复
+    ☐ 性能调优
+    ☐ InnoDB引擎源码编译和调试
+
 
 - 《区块链：价值互联网的基石》
     ✔ ch01:  @done (2018-05-27)
 
 - Python Library
     18. Interprocess Communication and Networking
-    ☐ 18.1 socket
+    ✔ 18.1 socket @done (2018-06-17)
 
 - 《从0开始学架构》
     ✔ 00开篇词 @done (2018-05-05)
@@ -139,17 +168,14 @@ comments: true
     ☐ 08-引用
 
 
-
 - 《高性能MySQL》
     ✔ MySQL架构与历史 @done (17-07-22)
-
 
 
 - 《代码整洁之道》
     ✔ ch00: 引言 & 译者序 & 序 @done (2018-03-13)
     ✔ ch01: 专业主义 @done (2018-03-14)
     ✔ ch02: 说不 @done (2018-03-16)
-    ☐ 
 
 
 - 《未来之路》

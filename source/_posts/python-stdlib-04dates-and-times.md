@@ -5,7 +5,7 @@ date: 2017-10-03 13:20:16
 subtitle: Dates and Times
 header-img:
 tags:
-    - 札记
+    - 编程札记
     - Python标准库
 ---
 

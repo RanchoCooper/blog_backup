@@ -5,7 +5,7 @@ catalog: true
 date: 2018-02-28 16:27:17
 header-img:
 tags:
-    - 札记
+    - 编程札记
 ---
 
 **[原文地址](http://aosabook.org/en/500L/a-simple-object-model.html)**

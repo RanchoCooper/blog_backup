@@ -5,7 +5,7 @@ date: 2017-10-01 14:07:47
 subtitle: Cotainer Data Types
 header-img:
 tags:
-    - 札记
+    - 编程札记
     - Python标准库
 ---
 

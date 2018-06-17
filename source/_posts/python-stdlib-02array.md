@@ -5,7 +5,7 @@ date: 2017-10-01 15:41:27
 subtitle: Sequence of Fixed-Type Data
 header-img:
 tags:
-    - 札记
+    - 编程札记
     - Python标准库
 ---
 
