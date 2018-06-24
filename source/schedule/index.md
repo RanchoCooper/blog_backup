@@ -67,7 +67,9 @@ comments: true
 
 
 - 《区块链：价值互联网的基石》
-    ✔ ch01:  @done (2018-05-27)
+    ✔ ch01: 区块链的前世 @done (2018-05-27)
+    ☐ ch02: 区块链的今世
+
 
 - Python Library
     18. Interprocess Communication and Networking
@@ -150,9 +152,9 @@ comments: true
     ☐ 延伸阅读
     ☐ ch15: 上下文管理器和else块
     ☐ 延伸阅读
-    ☐ ch16: 协程
+    ✔ ch16: 协程 @done (2018-06-19)
     ☐ 延伸阅读
-    ✔ ch17: 使用期物处理并发 @done (2018-05-10)
+    ✔ ch17: 使用期物处理并发 @done (2018-06-19)
     ☐ 延伸阅读
     ☐ ch18: 使用asyncio包处理并发
     ☐ 延伸阅读
