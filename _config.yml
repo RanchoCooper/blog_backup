@@ -151,4 +151,4 @@ deploy:
     type: git
     repo: git@git.coding.net:ranchocooper/blog.git
     branch: master
-    message: understand high performance python
+    message: whats new in python3.7

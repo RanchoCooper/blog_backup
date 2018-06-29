@@ -11,14 +11,13 @@ comments: true
 
 ## 进度明细
 
-- Tornado Doc
-    ☐ User's guide
-    ☐ Web Framework
-    ☐ HTTP servers and clients
-    ☐ Asynchronous networking
-    ☐ Coroutines and concurrency
-    ☐ Integration with other services
-    ☐ Utilities
+- Java In A Netshell
+    ☐ Part I. Introducting Java
+    ✔ ch01: Introduction to the Java Environment @done (2018-07-02)
+    ☐ ch02: Java Syntax from the Ground Up
+    ☐ ch03: Object-Oriented Programming in Java
+    ☐ ch04: The Java Type System
+    ☐ 
 
 
 - 《深入理解RPC》
