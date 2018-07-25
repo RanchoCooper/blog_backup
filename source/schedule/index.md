@@ -8,8 +8,28 @@ comments: true
 > 博观而约取，厚积而薄发。
 会当凌绝顶，一览众山小。
 
+## 书籍清单
+- Java
+    ☐ Effective Java
+    ☐ 深入理解Java虚拟机
+    ☐ Java并发编程实战
 
-## 进度明细
+
+## 社科书籍
+
+☐ 《21世纪资本论》
+
+
+## 技术书籍
+
+- Java核心技术 I
+
+
+- Vibora Doc
+    ✔ Routing @done (2018-07-16)
+    ✔ Components @done (2018-07-18)
+    ✔ Data Validation @done (2018-07-20)
+
 
 - Java In A Netshell
     ☐ Part I. Introducting Java
@@ -17,7 +37,6 @@ comments: true
     ☐ ch02: Java Syntax from the Ground Up
     ☐ ch03: Object-Oriented Programming in Java
     ☐ ch04: The Java Type System
-    ☐ 
 
 
 - 《深入理解RPC》
@@ -201,6 +220,8 @@ comments: true
     ✔ 数据库系统的结构 @done (17-10-02 17:21)
     ✔ 数据库系统的组成 @done (17-10-03 11:44)
 
+
+--- ✄ ----------------------- 
 ## Archived
 
 - 《The Linux Command Line》
