@@ -29,6 +29,14 @@ comments: true
     ✔ Routing @done (2018-07-16)
     ✔ Components @done (2018-07-18)
     ✔ Data Validation @done (2018-07-20)
+    ✔ Events @done (2018-07-29)
+    ✔ Testing @done (2018-07-29)
+    ✔ Template Engine @done (2018-07-29)
+    ✔ Logging @done (2018-07-29)
+    ✔ Configuration @done (2018-07-29)
+    ✔ Deployment @done (2018-07-29)
+    ☐ HTTP Client
+    ☐ Extensions
 
 
 - Java In A Netshell
