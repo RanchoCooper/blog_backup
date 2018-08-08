@@ -151,4 +151,4 @@ deploy:
     type: git
     repo: git@git.coding.net:ranchocooper/blog.git
     branch: master
-    message: whats new in python3.7
+    message: update schedule

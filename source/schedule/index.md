@@ -17,26 +17,33 @@ comments: true
 
 ## 社科书籍
 
-☐ 《21世纪资本论》
+✔ 《21世纪资本论》 @done (2018-08-06 22:48)
+☐ 《你的礼仪值百万》
+☐ 《乌合之众》
+☐ 《牛津通识读本：领导力》
+☐ 《逆向管理：先行动后思考》
 
 
 ## 技术书籍
 
-- Java核心技术 I
+- Python Cook Book
+    ✔ 07 函数 @done (2018-08-08 12:18)
+
+- 掘金小册 
+    ☐ Redis深度历险：核心原理与应用实践
 
 
-- Vibora Doc
-    ✔ Routing @done (2018-07-16)
-    ✔ Components @done (2018-07-18)
-    ✔ Data Validation @done (2018-07-20)
-    ✔ Events @done (2018-07-29)
-    ✔ Testing @done (2018-07-29)
-    ✔ Template Engine @done (2018-07-29)
-    ✔ Logging @done (2018-07-29)
-    ✔ Configuration @done (2018-07-29)
-    ✔ Deployment @done (2018-07-29)
-    ☐ HTTP Client
-    ☐ Extensions
+- Python Third Pard Libraries
+    ✔ attrs @done (2018-07-30 15:30)
+    ☐ Celery Doc
+
+
+- PostgreSQL 10.1中文手册
+    ✔ 从头开始 @done (2018-07-29 04:43)
+    ✔ SQL语言 @done (2018-07-29 15:51)
+    ☐ 高级特性
+    ☐ 
+
 
 
 - Java In A Netshell
@@ -265,3 +272,17 @@ comments: true
     ch09: 基于HTTP的功能追加协议
     ✔ ch10: 构建Web内容的技术 @done (2018-05-04)
     ✔ ch11: Web的攻击技术 @done (2018-05-04)
+
+- Vibora Doc
+    ✔ Routing @done (2018-07-16)
+    ✔ Components @done (2018-07-18)
+    ✔ Data Validation @done (2018-07-20)
+    ✔ Events @done (2018-07-29)
+    ✔ Testing @done (2018-07-29)
+    ✔ Template Engine @done (2018-07-29)
+    ✔ Logging @done (2018-07-29)
+    ✔ Configuration @done (2018-07-29)
+    ✔ Deployment @done (2018-07-29)
+    ☐ HTTP Client
+    ☐ Extensions
+
