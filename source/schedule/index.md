@@ -29,21 +29,33 @@ comments: true
 - Python Cook Book
     ✔ 07 函数 @done (2018-08-08 12:18)
 
-- 掘金小册 
+
+- 掘金小册
     ☐ Redis深度历险：核心原理与应用实践
+
+
+- SQLAlchemy Doc
+    ☐ Overview
+    ☐
+    ☐ 
 
 
 - Python Third Pard Libraries
     ✔ attrs @done (2018-07-30 15:30)
+    ☐ psycopg
     ☐ Celery Doc
+
 
 
 - PostgreSQL 10.1中文手册
     ✔ 从头开始 @done (2018-07-29 04:43)
     ✔ SQL语言 @done (2018-07-29 15:51)
-    ☐ 高级特性
-    ☐ 
-
+    ✔ 高级特性 @done (2018-08-08 12:35)
+    ☐ SQL语法
+    ☐ 数据定义
+    ☐ 数据操纵
+    ☐ 查询
+    ☐ 数据类型
 
 
 - Java In A Netshell
@@ -107,6 +119,7 @@ comments: true
 - Python Library
     18. Interprocess Communication and Networking
     ✔ 18.1 socket @done (2018-06-17)
+
 
 - 《从0开始学架构》
     ✔ 00开篇词 @done (2018-05-05)
