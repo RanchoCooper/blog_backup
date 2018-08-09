@@ -20,8 +20,8 @@ tag_map:
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
-url: https://ranchocooper.coding.me/blog/
-root: /blog
+url: https://blog.ranchocooper.com
+root: /
 permalink: :year/:month/:day/:title/
 permalink_defaults:
 
@@ -66,7 +66,7 @@ duoshuo_share: true                     # set to false if you want to use Commen
 # Sidebar settings
 sidebar: true                           # whether or not using Sidebar.
 sidebar-about-description: "爱和死亡，留给上帝。"
-sidebar-avatar: /img/avatar.jpg      # use absolute URL, seeing it's used in both `/` and `/about/`
+sidebar-avatar: img/avatar.jpg      # use absolute URL, seeing it's used in both `/` and `/about/`
 
 
 # Featured Tags
@@ -149,6 +149,8 @@ theme: hexo-theme-huxblog
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
     type: git
-    repo: git@git.coding.net:ranchocooper/blog.git
-    branch: master
-    message: update python3.7
+    repo:
+        github: git@git.coding.net:ranchocooper/blog.git
+    branch:
+        master
+    message: update url config
