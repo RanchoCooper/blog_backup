@@ -150,7 +150,8 @@ theme: hexo-theme-huxblog
 deploy:
     type: git
     repo:
-        github: git@git.coding.net:ranchocooper/blog.git
+        coding: git@git.coding.net:ranchocooper/blog.git
+        github: git@github.com:RanchoCooper/RanchoCooper.github.io.git
     branch:
         master
     message: update url config
