@@ -4,7 +4,7 @@ catalog: true
 date: 2018-06-13 10:36:15
 subtitle: Singleton in Python
 author: Rancho
-header-img:
+header-img: header.jpeg
 tags:
     - 编程札记
     - 设计模式
