@@ -8,6 +8,7 @@ header-img: header.jpeg
 tags:
     - 编程札记
     - 设计模式
+    - Python
 ---
 
 # 单例模式

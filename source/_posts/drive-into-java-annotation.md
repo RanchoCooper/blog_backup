@@ -7,6 +7,8 @@ author: Rancho
 header-img: header.png
 tags:
     -  编程札记
+    - Java
+    - 注解
 ---
 
 近日暂别热爱且把玩多年的Python, 转向Java阵营. 转型期间遇到的首个confusion便是注解, 一方面是它长得很像Python装饰器, 另一方面是搬砖仿写时出镜率贼高, 但又特别陌生.

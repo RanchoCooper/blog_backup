@@ -7,7 +7,7 @@ author: Rancho
 header-img: header.jpg
 tags:
     - 语言特性
-    - Python动态
+    - Python
 ---
 
 Python官方于6.27发布了V3.7.0的更新说明，包含很多新特性和优化。

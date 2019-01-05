@@ -1,11 +1,14 @@
 ---
-title: 理解Python中的协程
+title: 理解Python协程
 catalog: true
 date: 2018-12-27 22:40:02
 subtitle:  Understand Python Coroutine
-author:
+author: Rancho
 header-img: header.jpeg
 tags:
+    - Python
+    - 协程
+    - 编程札记
 ---
 
 # 概述
