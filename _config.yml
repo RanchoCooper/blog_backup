@@ -125,7 +125,7 @@ future: true
 highlight:
     enable: true
     line_number: true
-    auto_detect: true
+    auto_detect: false
     tab_replace: true
 
 # Date / Time format
@@ -154,4 +154,4 @@ deploy:
         github: git@github.com:RanchoCooper/RanchoCooper.github.io.git
     branch:
         master
-    message: remove schedule
+    message: junit4 customer runners
