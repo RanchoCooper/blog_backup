@@ -74,7 +74,7 @@ public class CustomerRunner extends Runner {
      */
     @Override
     public void run(RunNotifier notifier) {
-        System.out.println("running thr tests based on CustomerRunner" + testedClass);
+        System.out.println("running the tests based on CustomerRunner" + testedClass);
 
         try {
             Object testedObject = testedClass.newInstance();
@@ -92,11 +92,11 @@ public class CustomerRunner extends Runner {
 }
 ```
 
-在这个实现类中, 我们定义了一个接受类参数的构造函数, 这是JUnit框架的要求. 单测运行时, JUnit会将目标类传给Runner的构造器.
+在这个实现类中, 我们定义了一个接受类参数的构造函数, 这是JUnit框架对Runner的规范. 单测运行时, JUnit会将目标类传给Runner的构造器.
 `getDescription`方法用于返回描述信息, 而最关键的就在于`run`方法实现, 通过反射来调用目标方法.
-另外, 通过`run`方法的入参`RunNotifier`, 我们可以出发具有各种测试进度信息的事件. 这里我们仅在目标方法调用前后触发事件.
+另外, 通过`run`方法的入参`RunNotifier`, 我们可以出发具有各种测试进度信息的事件. 这里我们仅在目标方法调用前后触发事件. 感兴趣的话可以自行翻下RunNotifier中定义的其他方法
 
-接下来, 我们测试用例来使用这个`Runner`
+接下来, 我们随便写个测试用例来用下这个`Runner`
 ```java
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -127,12 +127,12 @@ class Calculator {
 }
 ```
 
-`Runner`是JUnit中的低级Runner, 易于定制的Runner子类还有`ParentRunner`和`BlockJUnit4Runner`.
-`ParentRunner`同样是个抽象类, 它以分层的方式来运行测试
-如果你想对Runner略加定制, 从`BlockJUnit4Runner`来派生子类会是不错的选择
+`Runner`是JUnit中的低级运行器, 相比之下, 其子类`ParentRunner`和`BlockJUnit4Runner`更加易于定制和扩展
+`ParentRunner`同样是个抽象类, 它会以分层的方式来运行测试
+一般情况, 如果你想对Runner做定制, 从`BlockJUnit4Runner`来派生子类是不错的选择
 
 
 ## 小结
-通过定制JUnit Runner, 开发人员可以更改测试执行的整个过程. 一些流行的第三方Runner实现还有`SpringJUnit4ClassRunner`, `MockitoJUnitRunner`, `HierarchicalContextRunner`等
+通过定制JUnit Runner, 开发人员可以自由控制测试执行的整个过程. 一些流行的第三方Runner实现还有`SpringJUnit4ClassRunner`, `MockitoJUnitRunner`, `HierarchicalContextRunner`等
 如果你想runwith multiple runner, 可以考虑从多个父类派生出新的子类Runner
-在PowerMock中, 这个问题是通过代理的方式解决的(PowerMockRunnerDelegate), 也是个不错的思路
+而在PowerMock中, 这个问题是通过代理的方式解决的(`@PowerMockRunnerDelegate`), 也是个不错的思路
