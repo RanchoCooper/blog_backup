@@ -151,6 +151,18 @@ sitemap:
 baidusitemap:
     path: baidusitemap.xml
 
+# Deployment
+## Docs: https://hexo.io/docs/deployment.html
+deploy:
+- type: git
+  repo:
+      coding: git@e.coding.net:ranchocooper/blog.git
+      github: git@github.com:RanchoCooper/RanchoCooper.github.io.git
+  branch:
+      master
+  message: update
+- type: baidu_url_submitter
+
 # 主动推送百度爬虫
 baidu_url_submit:
   count: 50 ## 提交最新的五个链接
@@ -158,19 +170,6 @@ baidu_url_submit:
   token: AGdOO4sohmVOQS8N ## 准入秘钥
   path: baidu_urls.txt ## 文本文档的地址， 新链接会保存在此文本文档里
 
-
-
-# Deployment
-## Docs: https://hexo.io/docs/deployment.html
-deploy:
-- type: git
-  repo:
-      coding: git@git.coding.net:ranchocooper/blog.git
-      github: git@github.com:RanchoCooper/RanchoCooper.github.io.git
-  branch:
-      master
-  message: junit4 customer runners
-- type: baidu_url_submitter
 
 
 valine:
