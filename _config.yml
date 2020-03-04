@@ -171,3 +171,14 @@ deploy:
       master
   message: junit4 customer runners
 - type: baidu_url_submitter
+
+
+valine:
+  enable: true
+  appid: li1kRISjluP9ha6djSeCbOHv-gzGzoHsz
+  appkey: h7xDLc7agN9fubb7g92tLE7x
+  notify: false # mail notifier , https://github.com/xCss/Valine/wiki
+  verify: false # Verification code
+  placeholder: ヾﾉ≧∀≦)o来啊，快活啊! 
+  guest_info: nick,mail,link
+  pageSize: 10
