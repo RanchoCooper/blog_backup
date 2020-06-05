@@ -170,14 +170,12 @@ baidu_url_submit:
   token: AGdOO4sohmVOQS8N ## 准入秘钥
   path: baidu_urls.txt ## 文本文档的地址， 新链接会保存在此文本文档里
 
-
-
 valine:
   enable: true
   appid: li1kRISjluP9ha6djSeCbOHv-gzGzoHsz
   appkey: h7xDLc7agN9fubb7g92tLE7x
   notify: false # mail notifier , https://github.com/xCss/Valine/wiki
   verify: false # Verification code
-  placeholder: ヾﾉ≧∀≦)o来啊，快活啊! 
+  placeholder: ヾﾉ≧∀≦)o来啊，快活啊!
   guest_info: nick,mail,link
   pageSize: 10
