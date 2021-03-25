@@ -160,7 +160,7 @@ deploy:
       github: git@github.com:RanchoCooper/RanchoCooper.github.io.git
   branch:
       master
-  message: update
+  message: fix backgroud size bug
 - type: baidu_url_submitter
 
 # 主动推送百度爬虫
