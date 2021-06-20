@@ -6,7 +6,7 @@ subtitle: Drive Into Java Annotation
 author: Rancho
 header-img: header.png
 tags:
-    -  编程札记
+    - 编程札记
     - Java
     - 注解
 ---

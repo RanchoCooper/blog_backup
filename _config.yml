@@ -7,7 +7,7 @@ title: Rancho
 subtitle: 爱和死亡留给上帝
 author: Rancho
 language:
-timezone:
+timezone: Asia/Shanghai
 
 # Category & Tag
 default_category: essay
@@ -16,7 +16,6 @@ tag_map:
     - 随笔: essay
     - 札记: note-reading
     - 编程: skill-programming
-    - 心智: mental
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
@@ -151,17 +150,6 @@ sitemap:
 baidusitemap:
     path: baidusitemap.xml
 
-# Deployment
-## Docs: https://hexo.io/docs/deployment.html
-deploy:
-- type: git
-  repo:
-      coding: git@e.coding.net:ranchocooper/blog.git
-      github: git@github.com:RanchoCooper/RanchoCooper.github.io.git
-  branch:
-      master
-  message: data structure in redis
-
 # 主动推送百度爬虫
 baidu_url_submit:
   count: 50 ## 提交最新的五个链接
@@ -178,3 +166,15 @@ valine:
   placeholder: ヾﾉ≧∀≦)o来啊，快活啊!
   guest_info: nick,mail,link
   pageSize: 10
+
+# Deployment
+## Docs: https://hexo.io/docs/deployment.html
+deploy:
+  - type: git
+    repo:
+      coding: git@e.coding.net:ranchocooper/blog.git
+      github: git@github.com:RanchoCooper/RanchoCooper.github.io.git
+    branch:
+      master
+    message: data structure in redis
+

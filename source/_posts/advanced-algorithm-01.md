@@ -1,8 +1,8 @@
 ---
-title: 算法进阶 - 数组、链表
+title: 算法进阶(01) - 数组、链表
 catalog: true
 date: 2021-06-20 04:58:29
-subtitle: advanced-algorithm-array-and-list
+subtitle: Advanced Algorithm - Array And List
 author: Rancho
 header-img:
 tags:
@@ -16,7 +16,7 @@ tags:
 
 给你两个有序整数数组`nums1` 和 `nums2`，请你将 `nums2` 合并到`nums1`中，使 `nums1` 成为一个有序数组。
 
-初始化`nums1` 和 `nums2` 的元素数量分别为`m` 和 `n` 。你可以假设`nums1` 的空间大小等于`m + n`，这样它就有足够的空间保存来自 `nums2\ 的元素。
+初始化`nums1` 和 `nums2` 的元素数量分别为`m` 和 `n` 。你可以假设`nums1` 的空间大小等于`m + n`，这样它就有足够的空间保存来自 `nums2` 的元素。
 
 ### 解题思路
 nums1有足够空间容纳所有数组元素, 用k从m+n-1处开始向前遍历nums1, 然后分别用i, j从后往前遍历两个数组, 并将大的元素填入k的位置, 时间复杂度为O(n)
@@ -146,7 +146,3 @@ func hasCycle(head *ListNode) bool {
     }     return false
 }
 ```
-
-
-
-
