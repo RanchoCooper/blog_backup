@@ -160,8 +160,7 @@ deploy:
       github: git@github.com:RanchoCooper/RanchoCooper.github.io.git
   branch:
       master
-  message: array and list
-- type: baidu_url_submitter
+  message: data structure in redis
 
 # 主动推送百度爬虫
 baidu_url_submit:
