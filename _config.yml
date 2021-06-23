@@ -176,5 +176,4 @@ deploy:
       github: git@github.com:RanchoCooper/RanchoCooper.github.io.git
     branch:
       master
-    message: data structure in redis
-
+    message: Advanced Algorithm - Stack And Queue
