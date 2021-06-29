@@ -69,10 +69,6 @@ func numberOfSubarrays(nums []int, k int) int {
 
 给定一个二维矩阵，计算其子矩形范围内元素的总和，该子矩阵的左上角为 (row1, col1) ，右下角为 (row2, col2) 。
 
-```go
-
-```
-
 # 差分
 
 ## 基础知识
@@ -92,22 +88,22 @@ func numberOfSubarrays(nums []int, k int) int {
 
 ```go
 func corpFlightBookings(bookings [][]int, n int) []int {   
-	delta := make([]int, n + 2) // 差分数组要开0~n+1   
-	for _, booking := range bookings {       
-		first, last, seats := booking[0], booking[1], booking[2]       
-		// 差分模板       
-		delta[first] += seats
-		delta[last + 1] -= seats  
-	}  
-	sum := make([]int, n + 1)   
-	for i := 1; i <= n; i++ {      
-		sum[i] = sum[i - 1] + delta[i]  
-	}   
-	// 将sum中元素往前挪一位   
-	for i := 1; i <= n; i++ {       
-		sum[i - 1] = sum[i]   
-	}  
-	return sum[:len(sum) - 1]
+    delta := make([]int, n + 2) // 差分数组要开0~n+1   
+    for _, booking := range bookings {       
+        first, last, seats := booking[0], booking[1], booking[2]       
+        // 差分模板       
+        delta[first] += seats
+        delta[last + 1] -= seats  
+    }  
+    sum := make([]int, n + 1)   
+    for i := 1; i <= n; i++ {      
+        sum[i] = sum[i - 1] + delta[i]  
+    }   
+    // 将sum中元素往前挪一位   
+    for i := 1; i <= n; i++ {       
+        sum[i - 1] = sum[i]   
+    }  
+    return sum[:len(sum) - 1]
 }
 ```
 
@@ -123,19 +119,19 @@ func corpFlightBookings(bookings [][]int, n int) []int {
 import "math"
 
 func maxSubArray(nums []int) int {   
-	n := len(nums)   
-	sum := make([]int, n + 1)   
-	// 构建前缀和   
-	for i := 1; i <= n; i++ {       
-		sum[i] = sum[i - 1] + nums[i - 1]  
-	}  
-	ans := math.MinInt32   
-	preMin := sum[0]   
-	for i := 1; i <= n; i++ {      
-		ans = int(math.Max(float64(ans), float64(sum[i] - preMin)))      
-		preMin = int(math.Min(float64(preMin), float64(sum[i])))  
-	} 
-	return ans
+    n := len(nums)   
+    sum := make([]int, n + 1)   
+    // 构建前缀和   
+    for i := 1; i <= n; i++ {       
+        sum[i] = sum[i - 1] + nums[i - 1]  
+    }  
+    ans := math.MinInt32   
+    preMin := sum[0]   
+    for i := 1; i <= n; i++ {      
+        ans = int(math.Max(float64(ans), float64(sum[i] - preMin)))      
+        preMin = int(math.Min(float64(preMin), float64(sum[i])))  
+    } 
+    return ans
 }
 ```
 
@@ -159,18 +155,18 @@ func maxSubArray(nums []int) int {
 
 ```go
 func twoSum(numbers []int, target int) []int {   
-	j := len(numbers) - 1   
-	for i := 0; i < len(numbers); i++ {       
-		// 当i增加, 若要满足numbers[i] + numbers[j] == target, j必然要减小       
-		// 所以可以固定i, 令j不断减小       
-		for ; i < j && numbers[i] + numbers[j] > target; j-- {                  
-			
-		} 
-		if i < j && numbers[i] + numbers[j] == target {           
-			return []int{i + 1, j + 1}      
-		}   
-	}  
-	return []int{}}
+    j := len(numbers) - 1   
+    for i := 0; i < len(numbers); i++ {       
+        // 当i增加, 若要满足numbers[i] + numbers[j] == target, j必然要减小       
+        // 所以可以固定i, 令j不断减小       
+        for ; i < j && numbers[i] + numbers[j] > target; j-- {                  
+            	
+        } 
+        if i < j && numbers[i] + numbers[j] == target {           
+            return []int{i + 1, j + 1}      
+        }   
+    }  
+    return []int{}}
 ```
 
 ## 三数之和
@@ -183,38 +179,38 @@ func twoSum(numbers []int, target int) []int {
 
 ```go
 func threeSum(nums []int) [][]int {   
-	ans := make([][]int, 0)       
-	// 排序   
-	sort.Sort(sort.IntSlice(nums))   
-	for i := 0; i < len(nums); i++ {       
-		// 去重       
-		if i > 0 && nums[i] == nums[i - 1] {           
-			continue    
-		} 
-		jks := twoSum(nums, i + 1, -nums[i])       
-		for _, jk := range jks {      
-			ans = append(ans, []int{nums[i], jk[0], jk[1]})  
-		}  
-	} 
-	return ans
+    ans := make([][]int, 0)       
+    // 排序   
+    sort.Sort(sort.IntSlice(nums))   
+    for i := 0; i < len(nums); i++ {       
+        // 去重       
+        if i > 0 && nums[i] == nums[i - 1] {           
+            continue    
+        } 
+        jks := twoSum(nums, i + 1, -nums[i])       
+        for _, jk := range jks {      
+            ans = append(ans, []int{nums[i], jk[0], jk[1]})  
+        }  
+    } 
+    return ans
 }
 
 func twoSum(nums []int, start, target int) [][]int {   
-	ans := make([][]int, 0)   
-	j := len(nums) - 1  
-	for i := start; i < len(nums); i++ {       
-		// 去重       
-		if i > start && nums[i] == nums[i - 1] {           
-			continue     
-		}  
-		for ; i < j && nums[i] + nums[j] > target; {           
-			j--    
-		} 
-		if i < j && nums[i] + nums[j] == target {   
-			ans = append(ans, []int{nums[i], nums[j]})     
-		} 
-	} 
-	return ans
+    ans := make([][]int, 0)   
+    j := len(nums) - 1  
+    for i := start; i < len(nums); i++ {       
+        // 去重       
+        if i > start && nums[i] == nums[i - 1] {           
+            continue     
+        }  
+        for ; i < j && nums[i] + nums[j] > target; {           
+            j--    
+        } 
+        if i < j && nums[i] + nums[j] == target {   
+            ans = append(ans, []int{nums[i], nums[j]})     
+        } 
+    } 
+    return ans
 }
 ```
 
@@ -234,19 +230,19 @@ func twoSum(nums []int, start, target int) [][]int {
 import "math"
 
 func maxArea(height []int) int {   
-	ans, i, j := 0, 0, len(height) - 1   
-	// i, j从两端向中间夹逼   
-	for ; i < j; {       
-		fi := float64(height[i])       
-		fj := float64(height[j])       
-		fa := float64(ans)       
-		ans = int(math.Max(fa, float64(j - i) * math.Min(fi, fj)))       
-		if fi < fj {         
-			i++    
-		} else {    
-			j--     
-		}
-	} 
-	return ans
+    ans, i, j := 0, 0, len(height) - 1   
+    // i, j从两端向中间夹逼   
+    for ; i < j; {       
+        fi := float64(height[i])       
+        fj := float64(height[j])       
+        fa := float64(ans)       
+        ans = int(math.Max(fa, float64(j - i) * math.Min(fi, fj)))       
+        if fi < fj {         
+            i++    
+        } else {    
+            j--     
+        }
+    } 
+    return ans
 }
 ```
