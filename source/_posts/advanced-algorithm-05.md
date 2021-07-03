@@ -3,9 +3,10 @@ title: 算法进阶(05) - 递归、分治
 catalog: true
 date: 2021-07-03 07:44:55
 subtitle: Advanced Algorith - Recursion And Divide
-author:
+author: Rancho
 header-img:
 tags:
+    - 算法
 ---
 # 基础知识
 
