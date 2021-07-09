@@ -271,7 +271,55 @@ func lowestCommonAncestor(root, p, q *TreeNode) *TreeNode {
 请你判断是否可能完成所有课程的学习？如果可以，返回 true ；否则，返回 false 。
 
 ```go
+func canFinish(numCourses int, prerequisites [][]int) bool {
+    // 出边数组
+    edges := make([][]int, numCourses)
+    // 记录每个点的入度
+    inDegree := make([]int, numCourses)
+    // 可学习的课程数量
+    learned := 0
 
+    // 加边(x到y)
+    var addEdge func(x, y int)
+    addEdge = func(x, y int) {
+        edges[x] = append(edges[x], y)
+        inDegree[y]++
+    }
+
+    // 拓扑排序
+    var topSort func()
+    topSort = func() {
+        queue := make([]int, 0)
+        for i := 0; i < numCourses; i++ {
+            // 将所有入度为0的点入队
+            if inDegree[i] == 0 {
+                queue = append(queue, i)
+            }
+        }
+
+        for len(queue) != 0 {
+            // pop
+            x := queue[0]
+            queue = queue[1:]
+            learned++
+
+            // x已学, 令其每个出边点的度数-1
+            for _, y := range edges[x] {
+                inDegree[y]--
+                if inDegree[y] == 0 {
+                    queue = append(queue, y)
+                }
+            }
+        }
+    }
+
+    for _, pre := range prerequisites {
+        addEdge(pre[1], pre[0])
+    }
+    topSort()
+
+    return learned == numCourses
+}
 ```
 
 
