@@ -231,3 +231,49 @@ func numIslands(grid [][]byte) int {
 }
 ```
 
+## 最小基因变化
+[LeetCode](https://leetcode-cn.com/problems/minimum-genetic-mutation/)
+
+```go
+func minMutation(start string, end string, bank []string) int {
+    // 记录变化步数
+    depth := make(map[string]int, 0)
+    genetic := []byte{'A', 'C', 'G', 'T'}
+    // 将bank转换为map, 方便比对
+    bankSet := make(map[string]bool)
+    for _, s := range bank {
+        bankSet[s] = true
+    }
+
+    queue := make([]string, 0)
+    queue = append(queue, start)
+    depth[start] = 0
+
+    for len(queue) != 0 {
+        current := queue[0]
+        queue = queue[1:]
+        for i := 0; i < len(start); i++ {
+            for j := 0; j < len(genetic); j++ {
+                if current[i] == genetic[j] {
+                    continue
+                }
+                byteNext := []byte(current)
+                byteNext[i] = genetic[j]
+                next := string(byteNext)
+                if _, ok := bankSet[next]; !ok {
+                    // next不在基因库中
+                    continue
+                }
+                if _, ok := depth[next]; !ok {
+                    depth[next] = depth[current] + 1
+                    queue = append(queue, next)
+                    if next == end {
+                        return depth[next]
+                    }
+                }
+            }
+        }
+    }
+    return -1
+}
+```
