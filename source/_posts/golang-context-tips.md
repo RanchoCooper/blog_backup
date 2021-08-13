@@ -171,3 +171,4 @@ func QueryContext(ctx context.Context, query string, args []NamedValue) (Rows, e
 func Query(query string, args []NamedValue) (Rows, error) {
     return QueryContext(context.Background(), query, args)
 }
+```
