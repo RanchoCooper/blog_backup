@@ -167,6 +167,25 @@ valine:
   guest_info: nick,mail,link
   pageSize: 10
 
+# RSS
+## Plugins: http://hexo.io/plugins/
+plugins:
+    hexo-generator-feed
+#Feed Atom
+feed:
+  enable: true
+  type: atom
+  path: rss.xml
+  limit: 20
+  hub:
+  content:
+  content_limit: 140
+  content_limit_delim: ' '
+  order_by: -date
+  icon: icon.png
+  autodiscovery: true
+  template:
+
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
