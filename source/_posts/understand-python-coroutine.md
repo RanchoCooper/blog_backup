@@ -4,7 +4,6 @@ catalog: true
 date: 2018-12-27 22:40:02
 subtitle:  Understand Python Coroutine
 author: Rancho
-header-img: header.jpeg
 tags:
     - Python
     - 协程

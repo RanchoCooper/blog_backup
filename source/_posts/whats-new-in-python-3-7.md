@@ -4,7 +4,6 @@ catalog: true
 date: 2018-06-29 10:44:25
 subtitle: What's New In Python3.7
 author: Rancho
-header-img: header.jpg
 tags:
     - 语言特性
     - Python

@@ -4,7 +4,6 @@ catalog: true
 date: 2018-11-08 01:00:39
 subtitle: Drive Into Java Annotation
 author: Rancho
-header-img: header.png
 tags:
     - 编程札记
     - Java
