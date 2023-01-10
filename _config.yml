@@ -191,7 +191,7 @@ feed:
 deploy:
   - type: git
     repo:
-      coding: git@e.coding.net:ranchocooper/blog.git
+#      coding: git@e.coding.net:ranchocooper/blog.git
       github: git@github.com:RanchoCooper/RanchoCooper.github.io.git
     branch:
       master
