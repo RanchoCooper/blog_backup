@@ -6,7 +6,7 @@ subtitle: Advanced Algorithm - Prefix-sum And Double Pointer Scanning
 author: Rancho
 header-img:
 tags:
-    - 算法
+  - 算法
 ---
 
 
@@ -26,7 +26,6 @@ tags:
 ### 解题思路
 首先, 这题和数组中元素的值无关, 我们可以先把数组进行转换: 奇数为1, 偶数为零, 然后构建前缀和数组S. 要得到`子数组中恰好有K个奇数`的数量, 也就是求S[i] - S[j] = k的数量. 所以只需要用一个计数数组统计S中每个值的个数, 枚举右端点i, 看一下等于S[i] - k的值的个数就可以了
 
-```go
 func numberOfSubarrays(nums []int, k int) int {
     // 向nums数组头部插入0, 方便下标索引   
     nums = append([]int{0}, nums...)   
@@ -34,7 +33,7 @@ func numberOfSubarrays(nums []int, k int) int {
     s := make([]int, n)   
     // 构建nums的前缀和数组, 并进行奇偶转换, 注意这里是从i = 1开始   
     for i := 1; i < n; i++ {
-    	s[i] = s[i - 1] + nums[i] % 2
+    	s[i] = s[i - 1] + nums[i]%2
     }   
     // 构建前缀和值的统计数组
     count := make([]int, n)   
@@ -53,8 +52,7 @@ func numberOfSubarrays(nums []int, k int) int {
     }   
     return ans
 }
-```
-                                      
+
 # 二维前缀和
 
 对于二维数组A
@@ -81,7 +79,7 @@ func numberOfSubarrays(nums []int, k int) int {
 ## 航班预订统计
 [LeetCode](https://leetcode-cn.com/problems/corporate-flight-bookings/)
 
-这里有 n 个航班，它们分别从 1 到 n 进行编号。有一份航班预订表 bookings ，表中第 i 条预订记录 bookings[i] = [firsti, lasti, seatsi] 
+这里有 n 个航班，它们分别从 1 到 n 进行编号。有一份航班预订表 bookings ，表中第 i 条预订记录 bookings[i] = [firsti, lasti, seatsi]
 意味着在从 firsti 到 lasti （包含 firsti 和 lasti ）的 每个航班 上预订了 seatsi 个座位。
 
 请你返回一个长度为 n 的数组 answer，其中 answer[i] 是航班 i 上预订的座位总数。
@@ -137,13 +135,13 @@ func maxSubArray(nums []int) int {
 
 # 双指针扫描
 
-双指针扫描一般用于解决 基于`子段`的统计问题这类题目的朴素做法都是两重循环的枚举, 枚举左端点l/右端点r. 
+双指针扫描一般用于解决 基于`子段`的统计问题这类题目的朴素做法都是两重循环的枚举, 枚举左端点l/右端点r.
 (时间复杂度O(N^2))优化手法都是找到枚举中的冗余部分, 并将其去除通常的优化策略有:
 
 * 固定右端点, 看左端点的取值范围
 * 移动一个端点, 看另一个端点的变化情况
-	* 例如一个端点跟随另一个端点单调移动, 像一个`滑动窗口`
-	* 此时可以考虑`双指针扫描`
+  * 例如一个端点跟随另一个端点单调移动, 像一个`滑动窗口`
+  * 此时可以考虑`双指针扫描`
 
 ## 两数之和 II - 输入有序数组
 
@@ -154,19 +152,19 @@ func maxSubArray(nums []int) int {
 你可以假设每个输入只对应唯一的答案，而且你不可以重复使用相同的元素。
 
 ```go
-func twoSum(numbers []int, target int) []int {   
-    j := len(numbers) - 1   
-    for i := 0; i < len(numbers); i++ {       
-        // 当i增加, 若要满足numbers[i] + numbers[j] == target, j必然要减小       
-        // 所以可以固定i, 令j不断减小       
-        for ; i < j && numbers[i] + numbers[j] > target; j-- {                  
-            	
-        } 
-        if i < j && numbers[i] + numbers[j] == target {           
-            return []int{i + 1, j + 1}      
-        }   
-    }  
-    return []int{}}
+func twoSum(numbers []int, target int) []int {
+j := len(numbers) - 1
+for i := 0; i < len(numbers); i++ {
+// 当i增加, 若要满足numbers[i] + numbers[j] == target, j必然要减小       
+// 所以可以固定i, 令j不断减小       
+for ; i < j && numbers[i] + numbers[j] > target; j-- {
+
+}
+if i < j && numbers[i] + numbers[j] == target {
+return []int{i + 1, j + 1}      
+}   
+}
+return []int{}}
 ```
 
 ## 三数之和
@@ -178,39 +176,39 @@ func twoSum(numbers []int, target int) []int {
 复用两数之和
 
 ```go
-func threeSum(nums []int) [][]int {   
-    ans := make([][]int, 0)       
-    // 排序   
-    sort.Sort(sort.IntSlice(nums))   
-    for i := 0; i < len(nums); i++ {       
-        // 去重       
-        if i > 0 && nums[i] == nums[i - 1] {           
-            continue    
-        } 
-        jks := twoSum(nums, i + 1, -nums[i])       
-        for _, jk := range jks {      
-            ans = append(ans, []int{nums[i], jk[0], jk[1]})  
-        }  
-    } 
-    return ans
+func threeSum(nums []int) [][]int {
+ans := make([][]int, 0)
+// 排序   
+sort.Sort(sort.IntSlice(nums))
+for i := 0; i < len(nums); i++ {
+// 去重       
+if i > 0 && nums[i] == nums[i - 1] {
+continue
+}
+jks := twoSum(nums, i + 1, -nums[i])
+for _, jk := range jks {
+ans = append(ans, []int{nums[i], jk[0], jk[1]})
+}  
+}
+return ans
 }
 
-func twoSum(nums []int, start, target int) [][]int {   
-    ans := make([][]int, 0)   
-    j := len(nums) - 1  
-    for i := start; i < len(nums); i++ {       
-        // 去重       
-        if i > start && nums[i] == nums[i - 1] {           
-            continue     
-        }  
-        for ; i < j && nums[i] + nums[j] > target; {           
-            j--    
-        } 
-        if i < j && nums[i] + nums[j] == target {   
-            ans = append(ans, []int{nums[i], nums[j]})     
-        } 
-    } 
-    return ans
+func twoSum(nums []int, start, target int) [][]int {
+ans := make([][]int, 0)
+j := len(nums) - 1
+for i := start; i < len(nums); i++ {
+// 去重       
+if i > start && nums[i] == nums[i - 1] {
+continue
+}
+for ; i < j && nums[i] + nums[j] > target; {
+j--
+}
+if i < j && nums[i] + nums[j] == target {
+ans = append(ans, []int{nums[i], nums[j]})
+} 
+}
+return ans
 }
 ```
 
@@ -229,20 +227,20 @@ func twoSum(nums []int, start, target int) [][]int {
 ```go
 import "math"
 
-func maxArea(height []int) int {   
-    ans, i, j := 0, 0, len(height) - 1   
-    // i, j从两端向中间夹逼   
-    for ; i < j; {       
-        fi := float64(height[i])       
-        fj := float64(height[j])       
-        fa := float64(ans)       
-        ans = int(math.Max(fa, float64(j - i) * math.Min(fi, fj)))       
-        if fi < fj {         
-            i++    
-        } else {    
-            j--     
-        }
-    } 
-    return ans
+func maxArea(height []int) int {
+ans, i, j := 0, 0, len(height) - 1
+// i, j从两端向中间夹逼   
+for ; i < j; {
+fi := float64(height[i])
+fj := float64(height[j])
+fa := float64(ans)
+ans = int(math.Max(fa, float64(j - i) * math.Min(fi, fj)))
+if fi < fj {
+i++
+} else {
+j--
+}
+}
+return ans
 }
 ```
