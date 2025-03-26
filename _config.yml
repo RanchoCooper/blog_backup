@@ -194,5 +194,5 @@ deploy:
       github: git@github.com:RanchoCooper/RanchoCooper.github.io.git
     branch:
       master
-    message: add go-hexagonal post
+    message: update go-hexagonal post
   - type: baidu_url_submitter
